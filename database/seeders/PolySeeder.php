@@ -12,6 +12,17 @@ class PolySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $polies = [
+            [
+                'kode_unit' => 'UMUM',
+                'nama_unit' => 'POLI UMUM',
+                'deskripsi' => '',
+                'is_active' => true
+            ]
+        ];
+
+        foreach ($polies as $item) {
+            \App\Models\Poly::create($item);
+        }
     }
 }

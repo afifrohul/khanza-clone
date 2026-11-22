@@ -12,6 +12,17 @@ class PatientCategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $patient_categories = [
+            [
+                'name' => 'Pasien Umum'
+            ],
+            [
+                'name' => 'Pasien BPJS'
+            ],
+        ];
+
+        foreach ($patient_categories as $item) {
+            \App\Models\PatientCategory::create($item);
+        }
     }
 }

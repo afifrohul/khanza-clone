@@ -12,6 +12,23 @@ class PaymentMethodSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $payment_methods = [
+            [
+                'name' => 'CASH'
+            ],
+            [
+                'name' => 'QRIS'
+            ],
+            [
+                'name' => 'Transfer Bank'
+            ],
+            [
+                'name' => 'BPJS'
+            ],
+        ];
+
+        foreach ($payment_methods as $item) {
+            \App\Models\PatientCategory::create($item);
+        }
     }
 }

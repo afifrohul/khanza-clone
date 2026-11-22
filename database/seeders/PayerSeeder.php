@@ -12,6 +12,17 @@ class PayerSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $payers = [
+            [
+                'name' => 'Pembayaran Pribadi'
+            ],
+            [
+                'name' => 'BPJS Kesehatan'
+            ],
+        ];
+
+        foreach ($payers as $item) {
+            \App\Models\Payer::create($item);
+        }
     }
 }
