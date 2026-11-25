@@ -16,7 +16,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 1,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
@@ -25,7 +25,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 2,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
@@ -34,7 +34,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 3,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
@@ -43,7 +43,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 4,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
@@ -52,7 +52,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 5,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
@@ -61,7 +61,7 @@ class EmployeeMedicalPersonnelSeeder extends Seeder
             [
                 'employee_id' => 6,
                 'nip' => fake()->numerify(),
-                'nik' => fake()->numerify(),
+                'nik' => fake()->nik(),
                 'no_str' => fake()->numerify(),
                 'no_sip' => fake()->numerify(),
                 'kode_dpjp_bpjs' => fake()->numerify(),
