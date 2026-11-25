@@ -15,9 +15,9 @@ class FaskesProfileSeeder extends Seeder
         $profiles = [
             [
                 'nama_faskes' => 'Klinik A',
-                'kode_faskes_bpjs' => '',
-                'kode_faskes_kemenkes' => '',
-                'ihs_organization_id' => '',
+                'kode_faskes_bpjs' => fake()->numerify(),
+                'kode_faskes_kemenkes' => fake()->numerify(),
+                'ihs_organization_id' => fake()->numerify(),
                 'alamat' => 'JL SUDIRMAN No. 01',
                 'kota' => 'Jember',
                 'provinsi' => 'Jawa Timur',
