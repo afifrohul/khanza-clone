@@ -12,10 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('subdistricts', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('province_id');
-            $table->foreignId('city_id');
-            $table->foreignId('district_id');
+            $table->string('id', 13)->primary();
+            $table->string('province_id', 13);
+            $table->string('city_id', 13);
+            $table->string('district_id', 13);
+            $table->foreign('province_id')->references('id')->on('provinces');
+            $table->foreign('city_id')->references('id')->on('cities');
+            $table->foreign('district_id')->references('id')->on('districts');
             $table->string('name');
             $table->timestamps();
         });
